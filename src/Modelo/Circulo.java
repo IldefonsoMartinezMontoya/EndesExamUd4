@@ -1,4 +1,6 @@
-public class Circulo implements opraciones{
+package Modelo;
+
+public class Circulo implements opraciones {
 
     private double radio;
 

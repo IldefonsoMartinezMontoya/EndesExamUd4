@@ -1,4 +1,6 @@
-public class Rectangulo implements opraciones{
+package Modelo;
+
+public class Rectangulo implements opraciones {
 
     private double ancho;
     private double alto;

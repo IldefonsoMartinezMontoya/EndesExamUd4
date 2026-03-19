@@ -1,3 +1,10 @@
+package vista;
+
+import Modelo.Circulo;
+import Modelo.Rectangulo;
+import Modelo.Triangulo;
+import controlador.GestorFiguras;
+
 public class Main {
 
     public static void main(String[] args) {

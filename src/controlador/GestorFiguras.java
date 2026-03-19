@@ -1,3 +1,9 @@
+package controlador;
+
+import Modelo.Circulo;
+import Modelo.Rectangulo;
+import Modelo.Triangulo;
+
 import java.util.ArrayList;
 
 public class GestorFiguras {

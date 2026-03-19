@@ -1,4 +1,6 @@
-public class Triangulo implements opraciones{
+package Modelo;
+
+public class Triangulo implements opraciones {
 
     private double base;
     private double altura;
