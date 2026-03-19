@@ -1,7 +1,7 @@
 package Modelo;
 
 public class Triangulo implements opraciones {
-
+    //Convertidas las variables a privadas y creados getters y setters para prevenir futuros errores
     private double base;
     private double altura;
     private double lado1;

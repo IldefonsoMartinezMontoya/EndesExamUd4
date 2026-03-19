@@ -1,7 +1,7 @@
 package Modelo;
 
 public class Circulo implements opraciones {
-
+    //Convertidas las variables a privadas y creados getters y setters para prevenir futuros errores
     private double radio;
 
     public Circulo(double radio) {

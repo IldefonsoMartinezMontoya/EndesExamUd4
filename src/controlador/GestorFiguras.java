@@ -7,7 +7,8 @@ import Modelo.Triangulo;
 import java.util.ArrayList;
 
 public class GestorFiguras {
-
+    //Eliminadas redundancias, convertidos varios if en un if-else if
+    //Convertida la lista en private y final porque no se va a instanciar fuera
     private final ArrayList<Object> figuras;
 
     public GestorFiguras() {
