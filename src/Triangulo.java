@@ -1,4 +1,4 @@
-public class Triangulo {
+public class Triangulo implements opraciones{
 
     private double base;
     private double altura;

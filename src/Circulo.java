@@ -1,4 +1,4 @@
-public class Circulo {
+public class Circulo implements opraciones{
 
     private double radio;
 

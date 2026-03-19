@@ -1,4 +1,4 @@
-public class Rectangulo {
+public class Rectangulo implements opraciones{
 
     private double ancho;
     private double alto;
