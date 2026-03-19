@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class GestorFiguras {
 
-    private ArrayList<Object> figuras;
+    private final ArrayList<Object> figuras;
 
     public GestorFiguras() {
         figuras = new ArrayList<>();
@@ -13,61 +13,36 @@ public class GestorFiguras {
     }
 
     public void mostrarAreas() {
-
         for (Object f : figuras) {
-
-            // horrible uso de instanceof
-            if (f instanceof Circulo) {
-                Circulo c = (Circulo) f;
+            if (f instanceof Circulo c) {
                 System.out.println("Area circulo: " + c.calcularArea());
-            }
-
-            if (f instanceof Rectangulo) {
-                Rectangulo r = (Rectangulo) f;
+            } else if (f instanceof Rectangulo r) {
                 System.out.println("Area rectangulo: " + r.calcularArea());
-            }
-
-            if (f instanceof Triangulo) {
-                Triangulo t = (Triangulo) f;
+            } else if (f instanceof Triangulo t) {
                 System.out.println("Area triangulo: " + t.calcularArea());
             }
         }
     }
 
     public void mostrarPerimetros() {
-
         for (Object f : figuras) {
-
-            if (f instanceof Circulo) {
-                Circulo c = (Circulo) f;
+            if (f instanceof Circulo c) {
                 System.out.println("Perimetro circulo: " + c.calcularPerimetro());
-            }
-
-            if (f instanceof Rectangulo) {
-                Rectangulo r = (Rectangulo) f;
+            } else if (f instanceof Rectangulo r) {
                 System.out.println("Perimetro rectangulo: " + r.calcularPerimetro());
-            }
-
-            if (f instanceof Triangulo) {
-                Triangulo t = (Triangulo) f;
+            } else if (f instanceof Triangulo t) {
                 System.out.println("Perimetro triangulo: " + t.calcularPerimetro());
             }
         }
     }
 
     public void dibujarTodo() {
-
         for (Object f : figuras) {
-
             if (f instanceof Circulo) {
                 ((Circulo) f).dibujar();
-            }
-
-            if (f instanceof Rectangulo) {
+            } else if (f instanceof Rectangulo) {
                 ((Rectangulo) f).dibujar();
-            }
-
-            if (f instanceof Triangulo) {
+            } else if (f instanceof Triangulo) {
                 ((Triangulo) f).dibujar();
             }
         }
