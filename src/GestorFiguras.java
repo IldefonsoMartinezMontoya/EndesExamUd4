@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class GestorFiguras {
 
-    public ArrayList<Object> figuras;
+    private ArrayList<Object> figuras;
 
     public GestorFiguras() {
         figuras = new ArrayList<>();

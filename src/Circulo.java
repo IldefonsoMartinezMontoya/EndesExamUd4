@@ -1,9 +1,9 @@
 public class Circulo {
 
-    public double radio;
+    private double radio;
 
     public Circulo(double radio) {
-        this.radio = radio;
+        setRadio(radio);
     }
 
     public double calcularArea() {
@@ -16,5 +16,17 @@ public class Circulo {
 
     public void dibujar() {
         System.out.println("Dibujando circulo de radio " + radio);
+    }
+
+    public double getRadio() {
+        return radio;
+    }
+
+    public void setRadio(double radio) {
+        if (radio < 0) {
+            throw new IllegalArgumentException("No puede ser negativo");
+        } else {
+            this.radio = radio;
+        }
     }
 }
